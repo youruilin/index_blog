@@ -9,6 +9,25 @@ new simpleParallax(image, {
   overflow: true
 });
 
+// 获取导航栏元素
+const nav = document.querySelector('.nav');
+
+// 监听滚动事件
+window.addEventListener('scroll', () => {
+  // 检查滚动条位置
+  if (window.scrollY === 0) {
+    nav.classList.add('top'); // 添加 .top 类
+  } else {
+    nav.classList.remove('top'); // 移除 .top 类
+  }
+});
+
+// 页面初始加载时检查滚动位置
+if (window.scrollY === 0) {
+  nav.classList.add('top');
+}
+
+
 // 添加菜单点击事件
 var menuButton = document.getElementById("nav-menu");
 menuButton.addEventListener('click',function(){
