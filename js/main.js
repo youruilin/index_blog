@@ -1,4 +1,4 @@
-const basePath = '/index_blog/';
+const basePath = '/index_blog';
   const tagsToModify = ['link', 'script', 'img'];
 
 tagsToModify.forEach(tagName => {
