@@ -391,6 +391,10 @@ a.group-item-icon {
   width: 100px;
   height: 100px;
 }
+a.group-item-icon-html {
+  width: 110px;
+  height: 110px;
+}
 
 img.group-item-icon-img {
   width: 100px;
@@ -560,6 +564,7 @@ span.punctuation {
   margin-bottom: 24px;
   display: flex;
   align-items: center;
+  z-index: 1; /* 确保链接在图片之上 */
 }
 
 a.primary-button {
@@ -588,11 +593,19 @@ a.second-link:hover {
   opacity: 1;
 }
 
+.banner-pic-shuangzhao {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  height: 520px;
+  position: absolute;
+  bottom: 100px;
+}
 .banner-pic {
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  height: 550px;
+  height: 400px;
   position: absolute;
   bottom: 100px;
 }
@@ -871,11 +884,6 @@ span.avatar-name {
     margin-top: 20px;
     height: 200px;
     bottom: 240px;
-  }
-
-  .product-banner {
-    padding-top: 60px;
-    min-height: 520px;
   }
 
   h2.group-title {
