@@ -592,7 +592,7 @@ a.second-link:hover {
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  height: 400px;
+  height: 550px;
   position: absolute;
   bottom: 100px;
 }
@@ -870,7 +870,7 @@ span.avatar-name {
   .banner-pic {
     margin-top: 20px;
     height: 200px;
-    bottom: 40px;
+    bottom: 240px;
   }
 
   .product-banner {
