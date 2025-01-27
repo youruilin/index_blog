@@ -1,21 +1,3 @@
-const basePath = '/index_blog';
-  const tagsToModify = ['link', 'script', 'img'];
-
-tagsToModify.forEach(tagName => {
-  const elements = document.querySelectorAll(tagName);
-  elements.forEach(element => {
-    const attr = tagName === 'link' || tagName === 'script' ? 'href' : 'src';
-    if (element.hasAttribute(attr)) {
-      const originalPath = element.getAttribute(attr);
-      if (!originalPath.startsWith('http') && !originalPath.startsWith(basePath)) {
-        element.setAttribute(attr, basePath + originalPath);
-      }
-    }
-  });
-});
-
-
-
 // 添加视差效果
 var image = document.getElementsByClassName('banner-pic-img');
 new simpleParallax(image, {
