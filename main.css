@@ -109,7 +109,7 @@
 }
 
 body {
-  background: var(--heo-background);
+  background: var(--heo-card-bg);
   display: flex;
   margin: auto;
   flex-direction: column;
@@ -601,6 +601,14 @@ a.second-link:hover {
   position: absolute;
   bottom: 100px;
 }
+/* .hand_phone {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  height: 520px;
+  position: absolute;
+  bottom: 100px;
+} */
 .banner-pic {
   margin-top: 20px;
   display: flex;
