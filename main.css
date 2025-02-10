@@ -319,7 +319,7 @@ a.nav-item:hover {
 .title-group {
   display: flex;
   flex-direction: column;
-  font-size: 70px;
+  font-size: 65px;
   font-weight: 400;
   color: #00001e;
   line-height: 75px;
@@ -329,7 +329,7 @@ a.nav-item:hover {
 
 span.discription-text {
   display: block;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 400;
   color: #00001e;
   line-height: 34px;
@@ -454,6 +454,11 @@ span.linkbotton-tips {
   overflow: hidden;
 }
 
+.discription2 {
+  -webkit-line-clamp: 2 !important; /* 这里是超出几行省略 */
+  padding-top: 8px;
+}
+
 a.linkbutton {
   padding: 6px 20px;
   display: flex;
@@ -521,6 +526,36 @@ a.linkbutton:active {
   position: relative;
   min-height: 800px;
 }
+.ec {
+  min-height: 1100px;
+}
+
+.banner-pic.ec {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  position: absolute;
+  bottom: 100px;
+}
+
+/* 嵌入平板的ec */
+.banner-pic-ec {
+  position: relative;
+}
+.banner-pic-img-ec {
+  width: 56% !important;
+  position: absolute;
+  top: 287px;
+  left: 244px;
+}
+
+.ecssakuhinn{ 
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #3c4143 !important;
+}
+
 
 .banner-info {
   display: flex;
@@ -597,18 +632,11 @@ a.second-link:hover {
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  height: 520px;
+  height: 600px;
   position: absolute;
   bottom: 100px;
 }
-/* .hand_phone {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  height: 520px;
-  position: absolute;
-  bottom: 100px;
-} */
+
 .banner-pic {
   margin-top: 20px;
   display: flex;
@@ -1519,4 +1547,10 @@ span.avatar-name {
   .nav-center {
       display: none
   }
+}
+
+.icon-mp4 {
+  width: 100%; /* 让视频填充父元素的宽度 */
+  height: 100%; /* 让视频填充父元素的高度 */
+  object-fit: contain; /* 保持视频比例，缩小并适应父元素 */
 }

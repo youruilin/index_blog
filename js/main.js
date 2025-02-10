@@ -114,3 +114,5 @@ function scrollToTopWithAnimation() {
 
   requestAnimationFrame(animation);
 }
+
+// 平板效果缩放
