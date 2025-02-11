@@ -1547,3 +1547,62 @@ span.avatar-name {
   height: 100%; /* 让视频填充父元素的高度 */
   object-fit: contain; /* 保持视频比例，缩小并适应父元素 */
 }
+
+/* 初始状态下隐藏二维码 */
+.qr-code {
+  position: absolute;
+  z-index: 9999;
+  background-color: white; /* 背景色 */
+  padding: 5px; /* 内边距 */
+  border: 1px solid #ccc; /* 边框 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  width: 90px; /* 固定宽度 */
+  height: 90px; /* 固定高度 */
+  overflow: hidden; /* 防止图片超出容器 */
+  pointer-events: none; /* 避免干扰 hover 事件 */
+
+  /* 初始位置 */
+  top: 250px; /* 初始位置：距离顶部 280px */
+  left: 276px; /* 初始位置：距离左侧 280px */
+  opacity: 1; /* 完全透明 */
+  transform: scale(0.8) translateY(20px); /* 缩小并向下偏移 */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* 过渡效果 */
+}
+
+/* 图片等比例缩放 */
+.qr-code img {
+  width: 100%; /* 图片宽度填满容器 */
+  height: 100%; /* 图片高度填满容器 */
+  object-fit: cover; /* 等比例缩放并裁剪以适应容器 */
+}
+
+/* 定义从初始位置到最终位置的动画 */
+@keyframes move-and-fade-in {
+  0% {
+    top: 280px; /* 初始位置：距离顶部 280px */
+    left: 280px; /* 初始位置：距离左侧 280px */
+    opacity: 0; /* 完全透明 */
+    transform: scale(0.8) translateY(20px); /* 缩小并向下偏移 */
+  }
+  100% {
+    top: -75%; /* 最终位置：向上偏移 75% */
+    left: -60%; /* 最终位置：向左偏移 60% */
+    opacity: 1; /* 完全不透明 */
+    transform: scale(1) translateY(0); /* 恢复正常大小并取消偏移 */
+  }
+}
+
+/* 鼠标移入 .erweima 时触发动画 */
+.erweima:hover + .qr-code {
+  animation: move-and-fade-in 0.5s ease-in-out forwards;
+}
+
+/* 确保 .link-group 容器使用相对定位 */
+.link-group {
+  position: relative;
+}
+
+/* 增加 hover 区域的容错空间 */
+.erweima {
+  padding-bottom: 10px; /* 在按钮下方增加一些空间 */
+}
