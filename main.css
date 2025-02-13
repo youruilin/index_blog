@@ -817,6 +817,13 @@ span.avatar-name {
     display: none;
   }
 
+  .banner-pic-img-ec {
+    width: 56% !important;
+    position: absolute;
+    top: 280px;
+    left: 234px;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -921,6 +928,18 @@ span.avatar-name {
     margin-top: 20px;
     height: 200px;
     bottom: 240px;
+  }
+  .banner-pic-shuangzhao {
+    margin-top: 20px;
+    height: 22px;
+    bottom: 240px;
+  }
+
+  .banner-pic-img-ec {
+    width: 56% !important;
+    position: absolute;
+    top: 106px !important;
+    left: 94px!important;
   }
 
   h2.group-title {
