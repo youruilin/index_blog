@@ -410,7 +410,7 @@ a.group-item-icon-html {
 img.group-item-icon-img {
   width: 100px;
   height: 100px;
-  border-radius: 28px;
+  /* border-radius: 28px; */
 }
 
 .group-info-button {
@@ -1579,8 +1579,8 @@ span.avatar-name {
   pointer-events: none; /* 避免干扰 hover 事件 */
 
   /* 初始位置 */
-  top: 250px; /* 初始位置：距离顶部 280px */
-  left: 276px; /* 初始位置：距离左侧 280px */
+  top: 244px; /* 初始位置：距离顶部 280px */
+  left: 290px; /* 初始位置：距离左侧 280px */
   opacity: 1; /* 完全透明 */
   transform: scale(0.8) translateY(20px); /* 缩小并向下偏移 */
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* 过渡效果 */
