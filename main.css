@@ -560,6 +560,12 @@ a.linkbutton:active {
   top: 287px;
   left: 244px;
 }
+.banner-pic-img-sl {
+  width: 88.3% !important;
+  position: absolute;
+  top: 92px;
+  left: 67px;
+}
 
 .ecssakuhinn{ 
   font-size: 16px !important;
@@ -832,6 +838,9 @@ span.avatar-name {
     left: 234px;
   }
 
+  .banner-pic-img-sl {
+    box-shadow: -21px -20px 35px rgba(0, 0, 0, 0.3); /* 水平偏移 垂直偏移 模糊半径 阴影颜色 */
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -948,6 +957,10 @@ span.avatar-name {
     position: absolute;
     top: 106px !important;
     left: 94px!important;
+  }
+
+  .banner-pic-img-sl {
+    display: none;
   }
 
   h2.group-title {
