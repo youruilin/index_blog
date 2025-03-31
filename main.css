@@ -1066,17 +1066,6 @@ span.avatar-name {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .group-item {
-    width: 50%;
-  }
-
-  .special-card {
-    display: none;
-  }
-
-}
-
 @media screen and (max-width: 768px) {
   .first-stack {
     margin-bottom: 20px;
